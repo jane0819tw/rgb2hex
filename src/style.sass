@@ -1,0 +1,50 @@
+*
+  // border: 1px solid #000
+html,body
+  height: 100%
+  margin: 0
+body
+  display: flex
+  justify-content: center
+  align-items: center
+.panel
+  display: flex
+  flex-direction: column
+  align-items: center
+  ul
+    padding: 0
+    li
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 10px
+      input
+        cursor: pointer
+      .name,.value
+        padding: 10px
+        border-radius: 10px
+        font-weight: 900
+      &.red
+        .name,.value
+          background-color: rgb(255,0,0)
+      &.green
+        .name,.value
+          background-color: rgb(0,255,0)
+      &.blue
+        .name,.value
+          background-color: rgb(0,0,255)
+          
+#resultWord
+  span
+    font-weight: 900
+  input
+    padding: 10px
+    font-weight: 900
+    background-color: rgba(255,255,255,0.3)
+    border-radius: 10px
+    border: 1px solid #eee
+    outline: none
+    cursor: pointer
+    
+  
+  

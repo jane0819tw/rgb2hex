@@ -1,0 +1,55 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.panel ul {
+  padding: 0;
+}
+.panel ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.panel ul li input {
+  cursor: pointer;
+}
+.panel ul li .name, .panel ul li .value {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 900;
+}
+.panel ul li.red .name, .panel ul li.red .value {
+  background-color: red;
+}
+.panel ul li.green .name, .panel ul li.green .value {
+  background-color: lime;
+}
+.panel ul li.blue .name, .panel ul li.blue .value {
+  background-color: blue;
+}
+
+#resultWord span {
+  font-weight: 900;
+}
+#resultWord input {
+  padding: 10px;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  border: 1px solid #eee;
+  outline: none;
+  cursor: pointer;
+}

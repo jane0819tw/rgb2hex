@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>顏色轉換器</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="panel">
+  <h1>RGB -> HEX</h1>
+  <ul class="sources">
+    <li class="red">
+      <div class="name">R</div>
+      <input id="redInput" type="range" min="0" max="255" step="1"/>
+      <div class="value"> </div>
+    </li>
+    <li class="green">
+      <div class="name">G</div>
+      <input id="greenInput" type="range" min="0" max="255" step="1"/>
+      <div class="value"></div>
+    </li>
+    <li class="blue">
+      <div class="name">B</div>
+      <input id="blueInput" type="range" min="0" max="255" step="1"/>
+      <div class="value"> </div>
+    </li>
+  </ul>
+  <p>輸入HEX六個色碼</p>
+  <div id="resultWord"><span>#</span>
+    <input id="result" type="text" value="#55555"/>
+  </div>
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
